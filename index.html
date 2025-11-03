@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Author Site</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #f9f9f9;
+      padding: 20px 40px;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #555;
+      font-weight: 600;
+    }
+    .hero {
+      padding: 60px 40px;
+      text-align: center;
+      background: #fff;
+      border: 2px solid #ccc;
+      border-radius: 12px;
+      margin: 40px auto;
+      max-width: 800px;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      color: #666;
+    }
+    .cta-button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #000;
+      color: #fff;
+      border: none;
+      font-size: 1em;
+      font-weight: 600;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .section {
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .article-preview {
+      background: #fff;
+      padding: 30px;
+      margin-bottom: 30px;
+      border: 2px solid #ccc;
+      border-radius: 12px;
+    }
+    .article-preview h2 {
+      margin-bottom: 10px;
+    }
+    .article-preview p {
+      color: #666;
+      line-height: 1.6;
+    }
+    .newsletter {
+      background: #fff;
+      padding: 30px;
+      border: 2px solid #ccc;
+      border-radius: 12px;
+      text-align: center;
+    }
+    .newsletter input {
+      padding: 10px;
+      width: 60%;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .separator {
+      border: none;
+      border-top: 1px dotted #ccc;
+      margin: 60px auto;
+      width: 80%;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>Nabil Bleik</strong></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="articles.html">Articles</a>
+      <a href="Newsletter.html">Newsletter</a>
+      <a href="Books.html">Books</a>
+      <a href="about.html">About</a>
+      <a href="Resources.html">Resources</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Ideas for a clearer mind and a better day</h1>
+    <p>Essays on habits, focus, and creative systems.</p>
+    <button class="cta-button"> <a href="newsletter.html"> Join the Newsletter</a> </button>
+  </section>
+
+  <hr class="separator" />
+
+  <section class="section">
+    <div class="article-preview">
+      <h2>Why Tiny Habits Matter More Than Big Goals</h2>
+      <p>Big goals sound impressive. But it’s the small, daily actions that shape your future…</p>
+    </div>
+    <div class="article-preview">
+      <h2>The Power of Showing Up</h2>
+      <p>Consistency beats intensity. Here’s how to build momentum without burning out.</p>
+    </div>
+  </section>
+
+  <hr class="separator" />
+
+  <section class="section newsletter">
+    <h2>Weekly Clarity</h2>
+    <p>Get one short idea every week. No noise, just clarity.</p>
+    <input type="email" placeholder="Your email" />
+    <button class="cta-button">Subscribe</button>
+  </section>
+
+  <footer>
+    Built with clarity. Powered by curiosity.
+  </footer>
+</body>
+</html>

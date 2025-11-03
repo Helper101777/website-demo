@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Newsletter</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #f9f9f9;
+      padding: 20px 40px;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #555;
+      font-weight: 600;
+    }
+    .newsletter-container {
+      padding: 60px 40px;
+      max-width: 700px;
+      margin: auto;
+      background: #fff;
+      border: 2px solid #ccc;
+      border-radius: 12px;
+      text-align: center;
+    }
+    .newsletter-container h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .newsletter-container p {
+      font-size: 1.1em;
+      color: #555;
+      line-height: 1.6;
+    }
+    .newsletter-form {
+      margin-top: 30px;
+    }
+    .newsletter-form input[type="email"] {
+      padding: 12px;
+      width: 60%;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+    .newsletter-form button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #000;
+      color: #fff;
+      border: none;
+      font-size: 1em;
+      font-weight: 600;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .separator {
+      border: none;
+      border-top: 1px dotted #ccc;
+      margin: 60px auto;
+      width: 80%;
+    }
+    .archive {
+      padding: 40px;
+      max-width: 700px;
+      margin: auto;
+      background: #fff;
+      border: 2px solid #ccc;
+      border-radius: 12px;
+    }
+    .archive h2 {
+      margin-bottom: 20px;
+    }
+    .archive ul {
+      list-style: none;
+      padding: 0;
+    }
+    .archive li {
+      margin-bottom: 15px;
+    }
+    .archive a {
+      color: #333;
+      text-decoration: underline;
+      font-weight: 600;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>Nabil Bleik</strong></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="articles.html">Articles</a>
+      <a href="newsletter.html">Newsletter</a>
+        <a href="Books.html">Books</a>
+      <a href="about.html">About</a>
+      <a href="resources.html">Resources</a>
+    </nav>
+  </header>
+
+  <section class="newsletter-container">
+    <h1>Weekly Clarity</h1>
+    <p>
+      Every Saturday morning, I send one short idea to help you think better and live calmer.<br />
+      No noise. No fluff. Just clarity.
+    </p>
+
+ 
+      <form
+  action="https://buttondown.com/api/emails/embed-subscribe/NB1"
+  method="post"
+  target="popupwindow"
+  onsubmit="window.open('https://buttondown.com/NB1', 'popupwindow')"
+  class="embeddable-buttondown-form"
+>
+  <label for="bd-email">Enter your email</label>
+  <input type="email" name="email" id="bd-email" />
+  <input type="submit" value="Subscribe" style="background-color:#000; color:#fff; padding:0.75rem 1.5rem; border:none; border-radius:6px; font-weight:bold;">
+  <p>
+    <a href="https://buttondown.com/refer/NB1" target="_blank">
+    </a>
+  </p>
+</form>
+    </form>
+  </section>
+
+  <hr class="separator" />
+
+  <section class="archive">
+    <h2>2025 Newsletter Archive</h2>
+    <ul>
+      <li><a href="#">Nov 25 – COMING SOON</a></li>
+      <li><a href="#">Nov 18 – COMING SOON</a></li>
+      <li><a href="#">Nov 11 – COMING SOON</a></li>
+      <li><a href="Dispatch001.html">Nov 1  – Read More</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    Built with clarity. Powered by curiosity.
+  </footer>
+</body>
+</html>
