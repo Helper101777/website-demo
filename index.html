@@ -1,5 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+  body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+
+  .dark-mode {
+    background: #1a1a1a;
+    color: #eee;
+  }
+
+  .dark-mode a {
+    color: #ddd;
+  }
+
+  .dark-mode header,
+  .dark-mode .container,
+  .dark-mode .section,
+  .dark-mode .about-container,
+  .dark-mode .newsletter-container,
+  .dark-mode .books-container,
+  .dark-mode .resources-container {
+    background: #2a2a2a;
+    border-color: #444;
+  }
+
+  .dark-mode button,
+  .dark-mode a.button {
+    background: #fff;
+    color: #000;
+  }
+</style>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <style>
@@ -11,7 +48,10 @@
     color: #333;
     font-size: 1rem;
   }
-
+<label style="cursor:pointer;">
+  <input type="checkbox" id="darkToggle" onchange="document.body.classList.toggle('dark-mode')" />
+  <span style="font-weight:600;">🌙 Dark Mode</span>
+</label>
   header {
     background: #f9f9f9;
     padding: 20px;
@@ -261,6 +301,7 @@
 </body>
 
 </html>
+
 
 
 
