@@ -4,149 +4,184 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Inkspire Dispatch #002</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <style>
     body {
+      font-family: 'Inter', sans-serif;
       margin: 0;
-      font-family: sans-serif;
-      background: #fefefe;
-      color: #222;
-      line-height: 1.6;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+      font-size: 1rem;
     }
-    nav {
+    header {
+      background: #f9f9f9;
+      padding: 20px;
+      border-bottom: 1px solid #eee;
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-      padding: 2rem;
-      background-color: #fff;
+      justify-content: space-between;
+      align-items: center;
     }
-    .nav-button {
-      background-color: #000;
-      color: #fff;
-      padding: 0.75rem 1.5rem;
-      border-radius: 6px;
-      font-weight: bold;
+    nav a {
+      margin: 10px 15px;
       text-decoration: none;
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
+      color: #555;
+      font-weight: 600;
+      display: inline-block;
     }
-    .nav-button.show {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-    section {
-      max-width: 700px;
+    .container {
+      max-width: 800px;
       margin: auto;
-      padding: 2rem;
+      padding: 40px 20px;
+      background: #fff;
+      border: 2px solid #ccc;
+      border-radius: 12px;
+      box-sizing: border-box;
     }
     h1 {
-      font-size: 2rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
       margin-bottom: 0.5rem;
     }
-    h2, h3 {
+    h2 {
+      font-size: 1.25rem;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+    h3 {
       margin-top: 2rem;
+      font-size: 1.1rem;
+      color: #333;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #555;
     }
     ul {
-      padding-left: 1.2rem;
+      padding-left: 20px;
     }
-    em {
-      color: #555;
+    li {
+      margin-bottom: 10px;
+    }
+    a.button, button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 24px;
+      background: #000;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+      h1, h2 {
+        font-size: 1.5rem;
+      }
+      p, li {
+        font-size: 1rem;
+      }
+      a.button, button {
+        width: 100%;
+        text-align: center;
+      }
     }
   </style>
 </head>
 <body>
-
-<nav>
-        <a href="index.html">Home</a>
+  <header>
+    <div><strong>Nabil Bleik</strong></div>
+    <nav>
+      <a href="index.html">Home</a>
       <a href="articles.html">Articles</a>
       <a href="newsletter.html">Newsletter</a>
-        <a href="Books.html">Books</a>
+      <a href="Books.html">Books</a>
       <a href="about.html">About</a>
       <a href="Resources.html">Resources</a>
+    </nav>
+  </header>
 
+  <div class="container">
+    <h1>Inkspire Dispatch #002</h1>
+    <h2>Stories, systems, and sparks of clarity — delivered monthly.</h2>
 
-</nav>
+    <p><strong>Hey friend,</strong></p>
 
-<section>
-  <h1>Inkspire Dispatch #002</h1>
-  <p><em>Stories, systems, and sparks of clarity — delivered monthly.</em></p>
+    <h3>🧠 How to Ask AI: A Guide to Getting Smarter Answers</h3>
+    <p>Artificial Intelligence (AI) has become a powerful tool for learning, creating, and solving problems. But like any tool, its effectiveness depends on how you use it. Asking AI the right way can unlock deeper insights, better results, and even spark new ideas. Here's how to do it.</p>
 
-  <p><strong>Hey friend,</strong></p>
+    <h3>🎯 1. Be Clear About Your Goal</h3>
+    <p>Before typing your question, ask yourself: What am I trying to achieve? Are you looking for:</p>
+    <ul>
+      <li>A factual answer?</li>
+      <li>Creative inspiration?</li>
+      <li>Help with writing or coding?</li>
+      <li>A recommendation or comparison?</li>
+    </ul>
+    <p><strong>Example:</strong> Instead of saying “Tell me about climate,” try:<br>
+    <em>“Can you summarize the causes and effects of climate change for a high school science project?”</em></p>
 
-  <h2>🧠 How to Ask AI: A Guide to Getting Smarter Answers</h2>
-  <p>Artificial Intelligence (AI) has become a powerful tool for learning, creating, and solving problems. But like any tool, its effectiveness depends on how you use it. Asking AI the right way can unlock deeper insights, better results, and even spark new ideas. Here's how to do it.</p>
+    <h3>🧩 2. Provide Context</h3>
+    <p>AI thrives on context. The more background you give, the better the answer.</p>
+    <ul>
+      <li>Who the audience is (e.g., beginner, expert, child)</li>
+      <li>What format you want (e.g., list, essay, code snippet)</li>
+      <li>Why you need it (e.g., for a presentation, blog, or decision-making)</li>
+    </ul>
+    <p><strong>Example:</strong><br>
+    <em>“Write a 300-word blog post explaining blockchain to small business owners who are new to tech.”</em></p>
 
-  <h3>🎯 1. Be Clear About Your Goal</h3>
-  <p>Before typing your question, ask yourself: What am I trying to achieve? Are you looking for:</p>
-  <ul>
-    <li>A factual answer?</li>
-    <li>Creative inspiration?</li>
-    <li>Help with writing or coding?</li>
-    <li>A recommendation or comparison?</li>
-  </ul>
-  <p><strong>Example:</strong> Instead of saying “Tell me about climate,” try:<br>
-  <em>“Can you summarize the causes and effects of climate change for a high school science project?”</em></p>
+    <h3>🛠️ 3. Use Modular Prompts</h3>
+    <p>Break complex requests into smaller parts. This helps AI respond more accurately and lets you iterate.</p>
+    <ul>
+      <li>“Suggest a minimalist layout for a personal blog.”</li>
+      <li>“Write HTML/CSS for a responsive homepage with a hero section.”</li>
+    </ul>
 
-  <h3>🧩 2. Provide Context</h3>
-  <p>AI thrives on context. The more background you give, the better the answer.</p>
-  <ul>
-    <li>Who the audience is (e.g., beginner, expert, child)</li>
-    <li>What format you want (e.g., list, essay, code snippet)</li>
-    <li>Why you need it (e.g., for a presentation, blog, or decision-making)</li>
-  </ul>
-  <p><strong>Example:</strong><br>
-  <em>“Write a 300-word blog post explaining blockchain to small business owners who are new to tech.”</em></p>
+    <h3>🔍 4. Ask Follow-Up Questions</h3>
+    <p>Treat AI like a conversation partner. If the first answer isn’t perfect, ask for:</p>
+    <ul>
+      <li>Clarification</li>
+      <li>Expansion</li>
+      <li>Rewriting in a different tone or format</li>
+    </ul>
+    <p><strong>Example:</strong><br>
+    <em>“Can you make that explanation more visual?”<br>
+    “Rewrite this paragraph to sound more persuasive.”</em></p>
 
-  <h3>🛠️ 3. Use Modular Prompts</h3>
-  <p>Break complex requests into smaller parts. This helps AI respond more accurately and lets you iterate.</p>
-  <p><strong>Example:</strong> Instead of “Help me build a website,” try:</p>
-  <ul>
-    <li>“Suggest a minimalist layout for a personal blog.”</li>
-    <li>“Write HTML/CSS for a responsive homepage with a hero section.”</li>
-  </ul>
+    <h3>🧪 5. Experiment and Iterate</h3>
+    <p>AI is great for brainstorming. Try variations of your prompt to explore different angles.</p>
+    <p><strong>Example:</strong><br>
+    <em>“Give me 3 metaphors to explain machine learning.”<br>
+    “Now turn the best one into a short poem.”</em></p>
 
-  <h3>🔍 4. Ask Follow-Up Questions</h3>
-  <p>Treat AI like a conversation partner. If the first answer isn’t perfect, ask for:</p>
-  <ul>
-    <li>Clarification</li>
-    <li>Expansion</li>
-    <li>Rewriting in a different tone or format</li>
-  </ul>
-  <p><strong>Example:</strong><br>
-  <em>“Can you make that explanation more visual?”<br>
-  “Rewrite this paragraph to sound more persuasive.”</em></p>
+    <h3>🧭 6. Be Honest About What You Don’t Know</h3>
+    <p>If you're unsure how to phrase something, say so. AI can help you refine your question.</p>
+    <p><strong>Example:</strong><br>
+    <em>“I’m not sure how to ask this, but I want help comparing two job offers based on long-term growth.”</em></p>
 
-  <h3>🧪 5. Experiment and Iterate</h3>
-  <p>AI is great for brainstorming. Try variations of your prompt to explore different angles.</p>
-  <p><strong>Example:</strong><br>
-  <em>“Give me 3 metaphors to explain machine learning.”<br>
-  “Now turn the best one into a short poem.”</em></p>
+    <h3>✨ Final Thoughts</h3>
+    <p>Asking AI is a skill — part curiosity, part clarity, and part creativity. The better your questions, the more powerful your answers. Whether you're coding, writing, researching, or just exploring, treat AI like a thoughtful collaborator. Ask boldly, iterate often, and let your questions lead the way.</p>
 
-  <h3>🧭 6. Be Honest About What You Don’t Know</h3>
-  <p>If you're unsure how to phrase something, say so. AI can help you refine your question.</p>
-  <p><strong>Example:</strong><br>
-  <em>“I’m not sure how to ask this, but I want help comparing two job offers based on long-term growth.”</em></p>
-
-  <h3>✨ Final Thoughts</h3>
-  <p>Asking AI is a skill — part curiosity, part clarity, and part creativity. The better your questions, the more powerful your answers. Whether you're coding, writing, researching, or just exploring, treat AI like a thoughtful collaborator. Ask boldly, iterate often, and let your questions lead the way.</p>
-</section>
-
-<script>
-  window.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.nav-button').forEach((btn, i) => {
-      setTimeout(() => {
-        btn.classList.add('show');
-      }, i * 150);
-    });
-  });
-</script>
-
+    <p class="footer">Until next time,<br /><strong>— Nabil</strong></p>
+    <a href="index.html"><button>⬅ Back to Home</button></a>
+  </div>
 </body>
 </html>
